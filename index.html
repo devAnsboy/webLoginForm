@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <header>
+            <h1>Welcome to the Login Page</h1>
+        </header>
+
+        <main>
+            <form id="loginForm" action="/script.js" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="passportPhoto">Passport Photo:</label>
+                    <input type="file" id="passportPhoto" name="passportPhoto" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="programme">Programme:</label>
+                    <input type="text" id="programme" name="programme" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Year">Year:</label>
+                    <input type="date" id="Year" name="Year" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Interests:</label>
+                    <input type="text" id="interests" name="interests" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button id="submit" type="submit">Login</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Login Page. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
